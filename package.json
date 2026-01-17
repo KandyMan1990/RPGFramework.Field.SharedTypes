@@ -1,0 +1,16 @@
+{
+  "name": "com.rpgframework.field.sharedtypes",
+  "version": "0.1.0",
+  "displayName": "RPG Framework Field Shared Types",
+  "description": "Shared types for the Field RPGFramework package, other modules should reference these when necessary",
+  "unity": "6000.0",
+  "keywords": [
+    "RPG Framework",
+    "Field",
+	"Shared Types"
+  ],
+  "author": {
+    "name": "Elliott Armstrong",
+    "url": "https://github.com/KandyMan1990/RPGFramework.Field.SharedTypes"
+  }
+}
