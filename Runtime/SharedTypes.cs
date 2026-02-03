@@ -5,16 +5,16 @@ namespace RPGFramework.Field.SharedTypes
 {
     public interface IFieldModuleArgs : IModuleArgs
     {
-        ulong GetFieldId { get; }
+        string GetFieldId { get; }
     }
 
     public readonly struct FieldModuleArgs : IFieldModuleArgs
     {
-        public ulong GetFieldId => m_FieldId;
+        public string GetFieldId => m_FieldId;
 
-        private readonly ulong m_FieldId;
+        private readonly string m_FieldId;
 
-        public FieldModuleArgs(ulong fieldId)
+        public FieldModuleArgs(string fieldId)
         {
             m_FieldId = fieldId;
         }
