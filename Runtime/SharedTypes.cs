@@ -5,22 +5,22 @@ namespace RPGFramework.Field.SharedTypes
 {
     public interface IFieldModuleArgs : IModuleArgs
     {
-        int    GetSpawnId { get; }
-        string GetFieldId { get; }
+        string   GetFieldId               { get; }
+        int      GetSpawnId               { get; }
+        string[] LocalisationSheetsToLoad { get; }
     }
 
     public readonly struct FieldModuleArgs : IFieldModuleArgs
     {
-        public int    GetSpawnId => m_SpawnId;
-        public string GetFieldId => m_FieldId;
+        public string   GetFieldId               { get; }
+        public int      GetSpawnId               { get; }
+        public string[] LocalisationSheetsToLoad { get; }
 
-        public readonly int    m_SpawnId;
-        public readonly string m_FieldId;
-
-        public FieldModuleArgs(string fieldId, int spawnId)
+        public FieldModuleArgs(string fieldId, int spawnId, string[] localisationSheetsToLoad)
         {
-            m_FieldId = fieldId;
-            m_SpawnId = spawnId;
+            GetFieldId               = fieldId;
+            GetSpawnId               = spawnId;
+            LocalisationSheetsToLoad = localisationSheetsToLoad;
         }
     }
 
