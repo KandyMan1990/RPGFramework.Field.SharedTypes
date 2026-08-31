@@ -2,8 +2,7 @@
     "name": "RPGFramework.Field.SharedTypes",
     "rootNamespace": "RPGFramework.Field.SharedTypes",
     "references": [
-        "GUID:15a54f1e5c2c23f419438b5c6d8a3a43",
-        "GUID:d8b63aba1907145bea998dd612889d6b"
+        "RPGFramework.Core.SharedTypes"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
