@@ -5,10 +5,11 @@ namespace RPGFramework.Field.SharedTypes
     [StructLayout(LayoutKind.Sequential)]
     public readonly struct FieldArgs
     {
-        public int FieldId { get; }
+        public ulong FieldId { get; }
+
         public int SpawnId { get; }
 
-        public FieldArgs(int fieldId, int spawnId)
+        public FieldArgs(ulong fieldId, int spawnId)
         {
             FieldId = fieldId;
             SpawnId = spawnId;
