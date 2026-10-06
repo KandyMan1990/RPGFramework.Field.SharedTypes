@@ -1,4 +1,4 @@
-namespace RPGFramework.Field.SharedTypes.Providers
+namespace RPGFramework.Field.SharedTypes.Stores
 {
     /// <summary>
     /// Which field the field module loads next, and where in it the player arrives. Anything sending the
@@ -7,7 +7,7 @@ namespace RPGFramework.Field.SharedTypes.Providers
     /// </summary>
     public interface IFieldArgsStore
     {
-        FieldArgs Get { get; }
+        FieldArgs Args { get; }
         void      Set(FieldArgs args);
     }
 }
