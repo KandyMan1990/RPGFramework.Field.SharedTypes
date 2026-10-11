@@ -7,7 +7,10 @@ namespace RPGFramework.Field.SharedTypes.Stores
     /// </summary>
     public interface IFieldArgsStore
     {
+        /// <summary>The field to load next and where the player arrives in it.</summary>
         FieldArgs Args { get; }
-        void      Set(FieldArgs args);
+
+        /// <summary>Sets the field the field module loads next.</summary>
+        void Set(FieldArgs args);
     }
 }
