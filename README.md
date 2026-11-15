@@ -2,7 +2,7 @@
 
 What other modules need to send the player to the field, without depending on the Field package itself.
 
-Requires Unity 6000.6 or newer and RPGFramework.Core.SharedTypes.
+Requires Unity 6000.7 or newer and RPGFramework.Core.SharedTypes.
 
 - **`IFieldModule`**: the field module, as Core resolves it.
 - **`FieldConstants.MODULE_ID`**: its module id, 0.
